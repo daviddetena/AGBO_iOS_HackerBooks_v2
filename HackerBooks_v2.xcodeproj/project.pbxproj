@@ -12,6 +12,10 @@
 		590B73D71AEA31AB00DE2FEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590B73D61AEA31AB00DE2FEF /* Images.xcassets */; };
 		590B73DA1AEA31AB00DE2FEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 590B73D81AEA31AB00DE2FEF /* LaunchScreen.xib */; };
 		590B73E61AEA31AB00DE2FEF /* HackerBooks_v2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B73E51AEA31AB00DE2FEF /* HackerBooks_v2Tests.m */; };
+		590B73F81AEA381F00DE2FEF /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B73F71AEA381F00DE2FEF /* UIViewController+Navigation.m */; };
+		590B73FB1AEA383700DE2FEF /* DTCCoreDataQueries.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B73FA1AEA383700DE2FEF /* DTCCoreDataQueries.m */; };
+		590B73FE1AEA385100DE2FEF /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B73FD1AEA385100DE2FEF /* AGTCoreDataStack.m */; };
+		590B74011AEA386400DE2FEF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 590B73FF1AEA386400DE2FEF /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,13 @@
 		590B73DF1AEA31AB00DE2FEF /* HackerBooks_v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerBooks_v2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		590B73E41AEA31AB00DE2FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		590B73E51AEA31AB00DE2FEF /* HackerBooks_v2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerBooks_v2Tests.m; sourceTree = "<group>"; };
+		590B73F61AEA381F00DE2FEF /* UIViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Navigation.h"; sourceTree = "<group>"; };
+		590B73F71AEA381F00DE2FEF /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navigation.m"; sourceTree = "<group>"; };
+		590B73F91AEA383700DE2FEF /* DTCCoreDataQueries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCCoreDataQueries.h; sourceTree = "<group>"; };
+		590B73FA1AEA383700DE2FEF /* DTCCoreDataQueries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCCoreDataQueries.m; sourceTree = "<group>"; };
+		590B73FC1AEA385100DE2FEF /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
+		590B73FD1AEA385100DE2FEF /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
+		590B74001AEA386400DE2FEF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +87,13 @@
 		590B73CE1AEA31AB00DE2FEF /* HackerBooks_v2 */ = {
 			isa = PBXGroup;
 			children = (
-				590B73D31AEA31AB00DE2FEF /* AppDelegate.h */,
-				590B73D41AEA31AB00DE2FEF /* AppDelegate.m */,
+				590B73F11AEA373A00DE2FEF /* Models */,
+				590B73F01AEA373300DE2FEF /* Views */,
+				590B73EF1AEA372500DE2FEF /* Controllers */,
+				590B73F41AEA375600DE2FEF /* Categories */,
+				590B73F31AEA374A00DE2FEF /* Helpers */,
+				590B73F21AEA374200DE2FEF /* AppDelegate */,
+				590B73F51AEA376200DE2FEF /* Resources */,
 				590B73D61AEA31AB00DE2FEF /* Images.xcassets */,
 				590B73D81AEA31AB00DE2FEF /* LaunchScreen.xib */,
 				590B73CF1AEA31AB00DE2FEF /* Supporting Files */,
@@ -109,6 +125,64 @@
 				590B73E41AEA31AB00DE2FEF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		590B73EF1AEA372500DE2FEF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				590B73F61AEA381F00DE2FEF /* UIViewController+Navigation.h */,
+				590B73F71AEA381F00DE2FEF /* UIViewController+Navigation.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		590B73F01AEA373300DE2FEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		590B73F11AEA373A00DE2FEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				590B73FC1AEA385100DE2FEF /* AGTCoreDataStack.h */,
+				590B73FD1AEA385100DE2FEF /* AGTCoreDataStack.m */,
+				590B73FF1AEA386400DE2FEF /* Model.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		590B73F21AEA374200DE2FEF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				590B73D31AEA31AB00DE2FEF /* AppDelegate.h */,
+				590B73D41AEA31AB00DE2FEF /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		590B73F31AEA374A00DE2FEF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				590B73F91AEA383700DE2FEF /* DTCCoreDataQueries.h */,
+				590B73FA1AEA383700DE2FEF /* DTCCoreDataQueries.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		590B73F41AEA375600DE2FEF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		590B73F51AEA376200DE2FEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				590B73F81AEA381F00DE2FEF /* UIViewController+Navigation.m in Sources */,
+				590B73FE1AEA385100DE2FEF /* AGTCoreDataStack.m in Sources */,
 				590B73D51AEA31AB00DE2FEF /* AppDelegate.m in Sources */,
 				590B73D21AEA31AB00DE2FEF /* main.m in Sources */,
+				590B73FB1AEA383700DE2FEF /* DTCCoreDataQueries.m in Sources */,
+				590B74011AEA386400DE2FEF /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +488,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		590B73FF1AEA386400DE2FEF /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				590B74001AEA386400DE2FEF /* Model.xcdatamodel */,
+			);
+			currentVersion = 590B74001AEA386400DE2FEF /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 590B73C41AEA31AB00DE2FEF /* Project object */;
 }

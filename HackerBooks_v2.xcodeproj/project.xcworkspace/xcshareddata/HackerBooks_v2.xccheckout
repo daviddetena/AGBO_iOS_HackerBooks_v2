@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1F564AC6-5951-46C7-8EA8-45316250C9F0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E77978FBBD1427E1831903372C099EEA2457CD3F</key>
+		<string>https://github.com/daviddetena/AGBO_iOS_HackerBooks_v2</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HackerBooks_v2.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E77978FBBD1427E1831903372C099EEA2457CD3F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/daviddetena/AGBO_iOS_HackerBooks_v2</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E77978FBBD1427E1831903372C099EEA2457CD3F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E77978FBBD1427E1831903372C099EEA2457CD3F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HackerBooks_v2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
