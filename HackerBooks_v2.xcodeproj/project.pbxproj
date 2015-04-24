@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5906F55C1AEADCD100F31878 /* DTCSandboxURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5906F55B1AEADCD100F31878 /* DTCSandboxURL.m */; };
+		5906F56E1AEAE49800F31878 /* download-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F55D1AEAE49800F31878 /* download-icon.png */; };
+		5906F56F1AEAE49800F31878 /* download-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F55E1AEAE49800F31878 /* download-icon@2x.png */; };
+		5906F5701AEAE49800F31878 /* downloaded-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F55F1AEAE49800F31878 /* downloaded-icon.png */; };
+		5906F5711AEAE49800F31878 /* downloaded-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F5601AEAE49800F31878 /* downloaded-icon@2x.png */; };
+		5906F5721AEAE49800F31878 /* emptyBookCover.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F5611AEAE49800F31878 /* emptyBookCover.png */; };
+		5906F5731AEAE49800F31878 /* favorite-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F5621AEAE49800F31878 /* favorite-filled.png */; };
+		5906F5741AEAE49800F31878 /* favorite-filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F5631AEAE49800F31878 /* favorite-filled@2x.png */; };
+		5906F5751AEAE49800F31878 /* favorite-outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F5641AEAE49800F31878 /* favorite-outline.png */; };
+		5906F5761AEAE49800F31878 /* favorite-outline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F5651AEAE49800F31878 /* favorite-outline@2x.png */; };
+		5906F5771AEAE49800F31878 /* noimageRect.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F5661AEAE49800F31878 /* noimageRect.png */; };
+		5906F5781AEAE49800F31878 /* noimageThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F5671AEAE49800F31878 /* noimageThumb.png */; };
+		5906F5791AEAE49800F31878 /* noimageThumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F5681AEAE49800F31878 /* noimageThumb@2x.png */; };
+		5906F57A1AEAE49800F31878 /* noimageWide.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F5691AEAE49800F31878 /* noimageWide.png */; };
+		5906F57B1AEAE49800F31878 /* pen-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F56A1AEAE49800F31878 /* pen-icon.png */; };
+		5906F57C1AEAE49800F31878 /* pen-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F56B1AEAE49800F31878 /* pen-icon@2x.png */; };
+		5906F57D1AEAE49800F31878 /* tag-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F56C1AEAE49800F31878 /* tag-icon.png */; };
+		5906F57E1AEAE49800F31878 /* tag-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5906F56D1AEAE49800F31878 /* tag-icon@2x.png */; };
 		590B73D21AEA31AB00DE2FEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B73D11AEA31AB00DE2FEF /* main.m */; };
 		590B73D51AEA31AB00DE2FEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B73D41AEA31AB00DE2FEF /* AppDelegate.m */; };
 		590B73D71AEA31AB00DE2FEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590B73D61AEA31AB00DE2FEF /* Images.xcassets */; };
@@ -16,6 +34,24 @@
 		590B73FB1AEA383700DE2FEF /* DTCCoreDataQueries.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B73FA1AEA383700DE2FEF /* DTCCoreDataQueries.m */; };
 		590B73FE1AEA385100DE2FEF /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B73FD1AEA385100DE2FEF /* AGTCoreDataStack.m */; };
 		590B74011AEA386400DE2FEF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 590B73FF1AEA386400DE2FEF /* Model.xcdatamodeld */; };
+		590B740F1AEA42C500DE2FEF /* _DTCAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B74041AEA42C500DE2FEF /* _DTCAnnotation.m */; };
+		590B74101AEA42C500DE2FEF /* _DTCAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B74061AEA42C500DE2FEF /* _DTCAuthor.m */; };
+		590B74111AEA42C500DE2FEF /* _DTCBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B74081AEA42C500DE2FEF /* _DTCBook.m */; };
+		590B74121AEA42C500DE2FEF /* _DTCPdf.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B740A1AEA42C500DE2FEF /* _DTCPdf.m */; };
+		590B74131AEA42C500DE2FEF /* _DTCPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B740C1AEA42C500DE2FEF /* _DTCPhoto.m */; };
+		590B74141AEA42C500DE2FEF /* _DTCTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B740E1AEA42C500DE2FEF /* _DTCTag.m */; };
+		590B74221AEA42EE00DE2FEF /* DTCAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B74171AEA42EE00DE2FEF /* DTCAnnotation.m */; };
+		590B74231AEA42EE00DE2FEF /* DTCAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B74191AEA42EE00DE2FEF /* DTCAuthor.m */; };
+		590B74241AEA42EE00DE2FEF /* DTCBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B741B1AEA42EE00DE2FEF /* DTCBook.m */; };
+		590B74251AEA42EE00DE2FEF /* DTCPdf.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B741D1AEA42EE00DE2FEF /* DTCPdf.m */; };
+		590B74261AEA42EE00DE2FEF /* DTCPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B741F1AEA42EE00DE2FEF /* DTCPhoto.m */; };
+		590B74271AEA42EE00DE2FEF /* DTCTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B74211AEA42EE00DE2FEF /* DTCTag.m */; };
+		590B742A1AEA44FB00DE2FEF /* DTCHackerBooksBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B74291AEA44FB00DE2FEF /* DTCHackerBooksBaseClass.m */; };
+		590B742D1AEA9FA300DE2FEF /* DTCHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B742C1AEA9FA300DE2FEF /* DTCHelpers.m */; };
+		590B74431AEAC6AD00DE2FEF /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B74421AEAC6AD00DE2FEF /* AGTCoreDataTableViewController.m */; };
+		590B74481AEAC7EF00DE2FEF /* DTCLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B74471AEAC7EF00DE2FEF /* DTCLibraryViewController.m */; };
+		590B744C1AEACB0C00DE2FEF /* DTCBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B744A1AEACB0C00DE2FEF /* DTCBookViewController.m */; };
+		590B744D1AEACB0C00DE2FEF /* DTCBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 590B744B1AEACB0C00DE2FEF /* DTCBookViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +65,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5906F55A1AEADCD100F31878 /* DTCSandboxURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCSandboxURL.h; sourceTree = "<group>"; };
+		5906F55B1AEADCD100F31878 /* DTCSandboxURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCSandboxURL.m; sourceTree = "<group>"; };
+		5906F55D1AEAE49800F31878 /* download-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download-icon.png"; sourceTree = "<group>"; };
+		5906F55E1AEAE49800F31878 /* download-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download-icon@2x.png"; sourceTree = "<group>"; };
+		5906F55F1AEAE49800F31878 /* downloaded-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "downloaded-icon.png"; sourceTree = "<group>"; };
+		5906F5601AEAE49800F31878 /* downloaded-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "downloaded-icon@2x.png"; sourceTree = "<group>"; };
+		5906F5611AEAE49800F31878 /* emptyBookCover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emptyBookCover.png; sourceTree = "<group>"; };
+		5906F5621AEAE49800F31878 /* favorite-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favorite-filled.png"; sourceTree = "<group>"; };
+		5906F5631AEAE49800F31878 /* favorite-filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favorite-filled@2x.png"; sourceTree = "<group>"; };
+		5906F5641AEAE49800F31878 /* favorite-outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favorite-outline.png"; sourceTree = "<group>"; };
+		5906F5651AEAE49800F31878 /* favorite-outline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favorite-outline@2x.png"; sourceTree = "<group>"; };
+		5906F5661AEAE49800F31878 /* noimageRect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimageRect.png; sourceTree = "<group>"; };
+		5906F5671AEAE49800F31878 /* noimageThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimageThumb.png; sourceTree = "<group>"; };
+		5906F5681AEAE49800F31878 /* noimageThumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noimageThumb@2x.png"; sourceTree = "<group>"; };
+		5906F5691AEAE49800F31878 /* noimageWide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimageWide.png; sourceTree = "<group>"; };
+		5906F56A1AEAE49800F31878 /* pen-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pen-icon.png"; sourceTree = "<group>"; };
+		5906F56B1AEAE49800F31878 /* pen-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pen-icon@2x.png"; sourceTree = "<group>"; };
+		5906F56C1AEAE49800F31878 /* tag-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tag-icon.png"; sourceTree = "<group>"; };
+		5906F56D1AEAE49800F31878 /* tag-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tag-icon@2x.png"; sourceTree = "<group>"; };
 		590B73CC1AEA31AB00DE2FEF /* HackerBooks_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerBooks_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		590B73D01AEA31AB00DE2FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		590B73D11AEA31AB00DE2FEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,6 +101,43 @@
 		590B73FC1AEA385100DE2FEF /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
 		590B73FD1AEA385100DE2FEF /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
 		590B74001AEA386400DE2FEF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		590B74041AEA42C500DE2FEF /* _DTCAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DTCAnnotation.m; sourceTree = "<group>"; };
+		590B74061AEA42C500DE2FEF /* _DTCAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DTCAuthor.m; sourceTree = "<group>"; };
+		590B74081AEA42C500DE2FEF /* _DTCBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DTCBook.m; sourceTree = "<group>"; };
+		590B740A1AEA42C500DE2FEF /* _DTCPdf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DTCPdf.m; sourceTree = "<group>"; };
+		590B740C1AEA42C500DE2FEF /* _DTCPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DTCPhoto.m; sourceTree = "<group>"; };
+		590B740E1AEA42C500DE2FEF /* _DTCTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DTCTag.m; sourceTree = "<group>"; };
+		590B74161AEA42EE00DE2FEF /* DTCAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCAnnotation.h; sourceTree = "<group>"; };
+		590B74171AEA42EE00DE2FEF /* DTCAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCAnnotation.m; sourceTree = "<group>"; };
+		590B74181AEA42EE00DE2FEF /* DTCAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCAuthor.h; sourceTree = "<group>"; };
+		590B74191AEA42EE00DE2FEF /* DTCAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCAuthor.m; sourceTree = "<group>"; };
+		590B741A1AEA42EE00DE2FEF /* DTCBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCBook.h; sourceTree = "<group>"; };
+		590B741B1AEA42EE00DE2FEF /* DTCBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCBook.m; sourceTree = "<group>"; };
+		590B741C1AEA42EE00DE2FEF /* DTCPdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCPdf.h; sourceTree = "<group>"; };
+		590B741D1AEA42EE00DE2FEF /* DTCPdf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCPdf.m; sourceTree = "<group>"; };
+		590B741E1AEA42EE00DE2FEF /* DTCPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCPhoto.h; sourceTree = "<group>"; };
+		590B741F1AEA42EE00DE2FEF /* DTCPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCPhoto.m; sourceTree = "<group>"; };
+		590B74201AEA42EE00DE2FEF /* DTCTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCTag.h; sourceTree = "<group>"; };
+		590B74211AEA42EE00DE2FEF /* DTCTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCTag.m; sourceTree = "<group>"; };
+		590B74281AEA44FB00DE2FEF /* DTCHackerBooksBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCHackerBooksBaseClass.h; sourceTree = "<group>"; };
+		590B74291AEA44FB00DE2FEF /* DTCHackerBooksBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCHackerBooksBaseClass.m; sourceTree = "<group>"; };
+		590B742B1AEA9FA300DE2FEF /* DTCHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCHelpers.h; sourceTree = "<group>"; };
+		590B742C1AEA9FA300DE2FEF /* DTCHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCHelpers.m; sourceTree = "<group>"; };
+		590B742E1AEA9FE800DE2FEF /* BookSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookSettings.h; sourceTree = "<group>"; };
+		590B743B1AEAA1E900DE2FEF /* _DTCAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _DTCAnnotation.h; sourceTree = "<group>"; };
+		590B743C1AEAA1E900DE2FEF /* _DTCAuthor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _DTCAuthor.h; sourceTree = "<group>"; };
+		590B743D1AEAA1E900DE2FEF /* _DTCBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _DTCBook.h; sourceTree = "<group>"; };
+		590B743E1AEAA1E900DE2FEF /* _DTCPdf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _DTCPdf.h; sourceTree = "<group>"; };
+		590B743F1AEAA1E900DE2FEF /* _DTCPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _DTCPhoto.h; sourceTree = "<group>"; };
+		590B74401AEAA1E900DE2FEF /* _DTCTag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _DTCTag.h; sourceTree = "<group>"; };
+		590B74411AEAC6AD00DE2FEF /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
+		590B74421AEAC6AD00DE2FEF /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
+		590B74451AEAC76300DE2FEF /* InitSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitSettings.h; sourceTree = "<group>"; };
+		590B74461AEAC7EF00DE2FEF /* DTCLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCLibraryViewController.h; sourceTree = "<group>"; };
+		590B74471AEAC7EF00DE2FEF /* DTCLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCLibraryViewController.m; sourceTree = "<group>"; };
+		590B74491AEACB0C00DE2FEF /* DTCBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCBookViewController.h; sourceTree = "<group>"; };
+		590B744A1AEACB0C00DE2FEF /* DTCBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCBookViewController.m; sourceTree = "<group>"; };
+		590B744B1AEACB0C00DE2FEF /* DTCBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTCBookViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +182,9 @@
 				590B73F11AEA373A00DE2FEF /* Models */,
 				590B73F01AEA373300DE2FEF /* Views */,
 				590B73EF1AEA372500DE2FEF /* Controllers */,
+				590B73F21AEA374200DE2FEF /* AppDelegate */,
 				590B73F41AEA375600DE2FEF /* Categories */,
 				590B73F31AEA374A00DE2FEF /* Helpers */,
-				590B73F21AEA374200DE2FEF /* AppDelegate */,
 				590B73F51AEA376200DE2FEF /* Resources */,
 				590B73D61AEA31AB00DE2FEF /* Images.xcassets */,
 				590B73D81AEA31AB00DE2FEF /* LaunchScreen.xib */,
@@ -130,8 +222,12 @@
 		590B73EF1AEA372500DE2FEF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				590B73F61AEA381F00DE2FEF /* UIViewController+Navigation.h */,
-				590B73F71AEA381F00DE2FEF /* UIViewController+Navigation.m */,
+				590B74441AEAC6EC00DE2FEF /* CoreData */,
+				590B74461AEAC7EF00DE2FEF /* DTCLibraryViewController.h */,
+				590B74471AEAC7EF00DE2FEF /* DTCLibraryViewController.m */,
+				590B74491AEACB0C00DE2FEF /* DTCBookViewController.h */,
+				590B744A1AEACB0C00DE2FEF /* DTCBookViewController.m */,
+				590B744B1AEACB0C00DE2FEF /* DTCBookViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -146,8 +242,22 @@
 		590B73F11AEA373A00DE2FEF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				590B73FC1AEA385100DE2FEF /* AGTCoreDataStack.h */,
-				590B73FD1AEA385100DE2FEF /* AGTCoreDataStack.m */,
+				590B74281AEA44FB00DE2FEF /* DTCHackerBooksBaseClass.h */,
+				590B74291AEA44FB00DE2FEF /* DTCHackerBooksBaseClass.m */,
+				590B74161AEA42EE00DE2FEF /* DTCAnnotation.h */,
+				590B74171AEA42EE00DE2FEF /* DTCAnnotation.m */,
+				590B74181AEA42EE00DE2FEF /* DTCAuthor.h */,
+				590B74191AEA42EE00DE2FEF /* DTCAuthor.m */,
+				590B741A1AEA42EE00DE2FEF /* DTCBook.h */,
+				590B741B1AEA42EE00DE2FEF /* DTCBook.m */,
+				590B741C1AEA42EE00DE2FEF /* DTCPdf.h */,
+				590B741D1AEA42EE00DE2FEF /* DTCPdf.m */,
+				590B741E1AEA42EE00DE2FEF /* DTCPhoto.h */,
+				590B741F1AEA42EE00DE2FEF /* DTCPhoto.m */,
+				590B74201AEA42EE00DE2FEF /* DTCTag.h */,
+				590B74211AEA42EE00DE2FEF /* DTCTag.m */,
+				590B74021AEA421600DE2FEF /* Machine */,
+				590B74151AEA42D300DE2FEF /* CoreDataStack */,
 				590B73FF1AEA386400DE2FEF /* Model.xcdatamodeld */,
 			);
 			name = Models;
@@ -165,8 +275,14 @@
 		590B73F31AEA374A00DE2FEF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				590B742B1AEA9FA300DE2FEF /* DTCHelpers.h */,
+				590B742C1AEA9FA300DE2FEF /* DTCHelpers.m */,
+				5906F55A1AEADCD100F31878 /* DTCSandboxURL.h */,
+				5906F55B1AEADCD100F31878 /* DTCSandboxURL.m */,
 				590B73F91AEA383700DE2FEF /* DTCCoreDataQueries.h */,
 				590B73FA1AEA383700DE2FEF /* DTCCoreDataQueries.m */,
+				590B742E1AEA9FE800DE2FEF /* BookSettings.h */,
+				590B74451AEAC76300DE2FEF /* InitSettings.h */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -174,6 +290,8 @@
 		590B73F41AEA375600DE2FEF /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				590B73F61AEA381F00DE2FEF /* UIViewController+Navigation.h */,
+				590B73F71AEA381F00DE2FEF /* UIViewController+Navigation.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -181,8 +299,62 @@
 		590B73F51AEA376200DE2FEF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5906F55D1AEAE49800F31878 /* download-icon.png */,
+				5906F55E1AEAE49800F31878 /* download-icon@2x.png */,
+				5906F55F1AEAE49800F31878 /* downloaded-icon.png */,
+				5906F5601AEAE49800F31878 /* downloaded-icon@2x.png */,
+				5906F5611AEAE49800F31878 /* emptyBookCover.png */,
+				5906F5621AEAE49800F31878 /* favorite-filled.png */,
+				5906F5631AEAE49800F31878 /* favorite-filled@2x.png */,
+				5906F5641AEAE49800F31878 /* favorite-outline.png */,
+				5906F5651AEAE49800F31878 /* favorite-outline@2x.png */,
+				5906F5661AEAE49800F31878 /* noimageRect.png */,
+				5906F5671AEAE49800F31878 /* noimageThumb.png */,
+				5906F5681AEAE49800F31878 /* noimageThumb@2x.png */,
+				5906F5691AEAE49800F31878 /* noimageWide.png */,
+				5906F56A1AEAE49800F31878 /* pen-icon.png */,
+				5906F56B1AEAE49800F31878 /* pen-icon@2x.png */,
+				5906F56C1AEAE49800F31878 /* tag-icon.png */,
+				5906F56D1AEAE49800F31878 /* tag-icon@2x.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		590B74021AEA421600DE2FEF /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				590B74041AEA42C500DE2FEF /* _DTCAnnotation.m */,
+				590B74061AEA42C500DE2FEF /* _DTCAuthor.m */,
+				590B74081AEA42C500DE2FEF /* _DTCBook.m */,
+				590B740A1AEA42C500DE2FEF /* _DTCPdf.m */,
+				590B743B1AEAA1E900DE2FEF /* _DTCAnnotation.h */,
+				590B743C1AEAA1E900DE2FEF /* _DTCAuthor.h */,
+				590B743D1AEAA1E900DE2FEF /* _DTCBook.h */,
+				590B743E1AEAA1E900DE2FEF /* _DTCPdf.h */,
+				590B743F1AEAA1E900DE2FEF /* _DTCPhoto.h */,
+				590B74401AEAA1E900DE2FEF /* _DTCTag.h */,
+				590B740C1AEA42C500DE2FEF /* _DTCPhoto.m */,
+				590B740E1AEA42C500DE2FEF /* _DTCTag.m */,
+			);
+			name = Machine;
+			sourceTree = "<group>";
+		};
+		590B74151AEA42D300DE2FEF /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				590B73FC1AEA385100DE2FEF /* AGTCoreDataStack.h */,
+				590B73FD1AEA385100DE2FEF /* AGTCoreDataStack.m */,
+			);
+			name = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		590B74441AEAC6EC00DE2FEF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				590B74411AEAC6AD00DE2FEF /* AGTCoreDataTableViewController.h */,
+				590B74421AEAC6AD00DE2FEF /* AGTCoreDataTableViewController.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +437,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5906F5741AEAE49800F31878 /* favorite-filled@2x.png in Resources */,
+				5906F57C1AEAE49800F31878 /* pen-icon@2x.png in Resources */,
+				5906F57D1AEAE49800F31878 /* tag-icon.png in Resources */,
+				5906F5781AEAE49800F31878 /* noimageThumb.png in Resources */,
+				5906F5761AEAE49800F31878 /* favorite-outline@2x.png in Resources */,
+				5906F57B1AEAE49800F31878 /* pen-icon.png in Resources */,
 				590B73DA1AEA31AB00DE2FEF /* LaunchScreen.xib in Resources */,
+				5906F5771AEAE49800F31878 /* noimageRect.png in Resources */,
+				590B744D1AEACB0C00DE2FEF /* DTCBookViewController.xib in Resources */,
+				5906F5751AEAE49800F31878 /* favorite-outline.png in Resources */,
+				5906F56E1AEAE49800F31878 /* download-icon.png in Resources */,
+				5906F5711AEAE49800F31878 /* downloaded-icon@2x.png in Resources */,
+				5906F5791AEAE49800F31878 /* noimageThumb@2x.png in Resources */,
+				5906F5701AEAE49800F31878 /* downloaded-icon.png in Resources */,
+				5906F57E1AEAE49800F31878 /* tag-icon@2x.png in Resources */,
+				5906F57A1AEAE49800F31878 /* noimageWide.png in Resources */,
+				5906F56F1AEAE49800F31878 /* download-icon@2x.png in Resources */,
+				5906F5731AEAE49800F31878 /* favorite-filled.png in Resources */,
+				5906F5721AEAE49800F31878 /* emptyBookCover.png in Resources */,
 				590B73D71AEA31AB00DE2FEF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,11 +475,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				590B73F81AEA381F00DE2FEF /* UIViewController+Navigation.m in Sources */,
+				590B742D1AEA9FA300DE2FEF /* DTCHelpers.m in Sources */,
+				590B74431AEAC6AD00DE2FEF /* AGTCoreDataTableViewController.m in Sources */,
+				590B74111AEA42C500DE2FEF /* _DTCBook.m in Sources */,
+				590B74271AEA42EE00DE2FEF /* DTCTag.m in Sources */,
+				590B74221AEA42EE00DE2FEF /* DTCAnnotation.m in Sources */,
 				590B73FE1AEA385100DE2FEF /* AGTCoreDataStack.m in Sources */,
 				590B73D51AEA31AB00DE2FEF /* AppDelegate.m in Sources */,
+				590B74481AEAC7EF00DE2FEF /* DTCLibraryViewController.m in Sources */,
+				590B74131AEA42C500DE2FEF /* _DTCPhoto.m in Sources */,
+				590B744C1AEACB0C00DE2FEF /* DTCBookViewController.m in Sources */,
+				590B74121AEA42C500DE2FEF /* _DTCPdf.m in Sources */,
 				590B73D21AEA31AB00DE2FEF /* main.m in Sources */,
+				590B74261AEA42EE00DE2FEF /* DTCPhoto.m in Sources */,
+				590B74251AEA42EE00DE2FEF /* DTCPdf.m in Sources */,
+				590B74231AEA42EE00DE2FEF /* DTCAuthor.m in Sources */,
+				590B742A1AEA44FB00DE2FEF /* DTCHackerBooksBaseClass.m in Sources */,
+				590B74101AEA42C500DE2FEF /* _DTCAuthor.m in Sources */,
 				590B73FB1AEA383700DE2FEF /* DTCCoreDataQueries.m in Sources */,
 				590B74011AEA386400DE2FEF /* Model.xcdatamodeld in Sources */,
+				590B74241AEA42EE00DE2FEF /* DTCBook.m in Sources */,
+				590B74141AEA42C500DE2FEF /* _DTCTag.m in Sources */,
+				590B740F1AEA42C500DE2FEF /* _DTCAnnotation.m in Sources */,
+				5906F55C1AEADCD100F31878 /* DTCSandboxURL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +686,7 @@
 				590B73EB1AEA31AB00DE2FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		590B73EC1AEA31AB00DE2FEF /* Build configuration list for PBXNativeTarget "HackerBooks_v2Tests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +695,7 @@
 				590B73EE1AEA31AB00DE2FEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
