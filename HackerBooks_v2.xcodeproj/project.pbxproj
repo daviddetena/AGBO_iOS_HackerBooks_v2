@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		590B73D21AEA31AB00DE2FEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B73D11AEA31AB00DE2FEF /* main.m */; };
+		590B73D51AEA31AB00DE2FEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B73D41AEA31AB00DE2FEF /* AppDelegate.m */; };
+		590B73D71AEA31AB00DE2FEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590B73D61AEA31AB00DE2FEF /* Images.xcassets */; };
+		590B73DA1AEA31AB00DE2FEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 590B73D81AEA31AB00DE2FEF /* LaunchScreen.xib */; };
+		590B73E61AEA31AB00DE2FEF /* HackerBooks_v2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B73E51AEA31AB00DE2FEF /* HackerBooks_v2Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		590B73E01AEA31AB00DE2FEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 590B73C41AEA31AB00DE2FEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 590B73CB1AEA31AB00DE2FEF;
+			remoteInfo = HackerBooks_v2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		590B73CC1AEA31AB00DE2FEF /* HackerBooks_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerBooks_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		590B73D01AEA31AB00DE2FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		590B73D11AEA31AB00DE2FEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		590B73D31AEA31AB00DE2FEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		590B73D41AEA31AB00DE2FEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		590B73D61AEA31AB00DE2FEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		590B73D91AEA31AB00DE2FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		590B73DF1AEA31AB00DE2FEF /* HackerBooks_v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerBooks_v2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		590B73E41AEA31AB00DE2FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		590B73E51AEA31AB00DE2FEF /* HackerBooks_v2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerBooks_v2Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		590B73C91AEA31AB00DE2FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		590B73DC1AEA31AB00DE2FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		590B73C31AEA31AB00DE2FEF = {
+			isa = PBXGroup;
+			children = (
+				590B73CE1AEA31AB00DE2FEF /* HackerBooks_v2 */,
+				590B73E21AEA31AB00DE2FEF /* HackerBooks_v2Tests */,
+				590B73CD1AEA31AB00DE2FEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		590B73CD1AEA31AB00DE2FEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				590B73CC1AEA31AB00DE2FEF /* HackerBooks_v2.app */,
+				590B73DF1AEA31AB00DE2FEF /* HackerBooks_v2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		590B73CE1AEA31AB00DE2FEF /* HackerBooks_v2 */ = {
+			isa = PBXGroup;
+			children = (
+				590B73D31AEA31AB00DE2FEF /* AppDelegate.h */,
+				590B73D41AEA31AB00DE2FEF /* AppDelegate.m */,
+				590B73D61AEA31AB00DE2FEF /* Images.xcassets */,
+				590B73D81AEA31AB00DE2FEF /* LaunchScreen.xib */,
+				590B73CF1AEA31AB00DE2FEF /* Supporting Files */,
+			);
+			path = HackerBooks_v2;
+			sourceTree = "<group>";
+		};
+		590B73CF1AEA31AB00DE2FEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				590B73D01AEA31AB00DE2FEF /* Info.plist */,
+				590B73D11AEA31AB00DE2FEF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		590B73E21AEA31AB00DE2FEF /* HackerBooks_v2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				590B73E51AEA31AB00DE2FEF /* HackerBooks_v2Tests.m */,
+				590B73E31AEA31AB00DE2FEF /* Supporting Files */,
+			);
+			path = HackerBooks_v2Tests;
+			sourceTree = "<group>";
+		};
+		590B73E31AEA31AB00DE2FEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				590B73E41AEA31AB00DE2FEF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		590B73CB1AEA31AB00DE2FEF /* HackerBooks_v2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 590B73E91AEA31AB00DE2FEF /* Build configuration list for PBXNativeTarget "HackerBooks_v2" */;
+			buildPhases = (
+				590B73C81AEA31AB00DE2FEF /* Sources */,
+				590B73C91AEA31AB00DE2FEF /* Frameworks */,
+				590B73CA1AEA31AB00DE2FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackerBooks_v2;
+			productName = HackerBooks_v2;
+			productReference = 590B73CC1AEA31AB00DE2FEF /* HackerBooks_v2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		590B73DE1AEA31AB00DE2FEF /* HackerBooks_v2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 590B73EC1AEA31AB00DE2FEF /* Build configuration list for PBXNativeTarget "HackerBooks_v2Tests" */;
+			buildPhases = (
+				590B73DB1AEA31AB00DE2FEF /* Sources */,
+				590B73DC1AEA31AB00DE2FEF /* Frameworks */,
+				590B73DD1AEA31AB00DE2FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				590B73E11AEA31AB00DE2FEF /* PBXTargetDependency */,
+			);
+			name = HackerBooks_v2Tests;
+			productName = HackerBooks_v2Tests;
+			productReference = 590B73DF1AEA31AB00DE2FEF /* HackerBooks_v2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		590B73C41AEA31AB00DE2FEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "David de Tena";
+				TargetAttributes = {
+					590B73CB1AEA31AB00DE2FEF = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					590B73DE1AEA31AB00DE2FEF = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 590B73CB1AEA31AB00DE2FEF;
+					};
+				};
+			};
+			buildConfigurationList = 590B73C71AEA31AB00DE2FEF /* Build configuration list for PBXProject "HackerBooks_v2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 590B73C31AEA31AB00DE2FEF;
+			productRefGroup = 590B73CD1AEA31AB00DE2FEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				590B73CB1AEA31AB00DE2FEF /* HackerBooks_v2 */,
+				590B73DE1AEA31AB00DE2FEF /* HackerBooks_v2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		590B73CA1AEA31AB00DE2FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590B73DA1AEA31AB00DE2FEF /* LaunchScreen.xib in Resources */,
+				590B73D71AEA31AB00DE2FEF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		590B73DD1AEA31AB00DE2FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		590B73C81AEA31AB00DE2FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590B73D51AEA31AB00DE2FEF /* AppDelegate.m in Sources */,
+				590B73D21AEA31AB00DE2FEF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		590B73DB1AEA31AB00DE2FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590B73E61AEA31AB00DE2FEF /* HackerBooks_v2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		590B73E11AEA31AB00DE2FEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 590B73CB1AEA31AB00DE2FEF /* HackerBooks_v2 */;
+			targetProxy = 590B73E01AEA31AB00DE2FEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		590B73D81AEA31AB00DE2FEF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				590B73D91AEA31AB00DE2FEF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		590B73E71AEA31AB00DE2FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		590B73E81AEA31AB00DE2FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		590B73EA1AEA31AB00DE2FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HackerBooks_v2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		590B73EB1AEA31AB00DE2FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HackerBooks_v2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		590B73ED1AEA31AB00DE2FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HackerBooks_v2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerBooks_v2.app/HackerBooks_v2";
+			};
+			name = Debug;
+		};
+		590B73EE1AEA31AB00DE2FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HackerBooks_v2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerBooks_v2.app/HackerBooks_v2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		590B73C71AEA31AB00DE2FEF /* Build configuration list for PBXProject "HackerBooks_v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				590B73E71AEA31AB00DE2FEF /* Debug */,
+				590B73E81AEA31AB00DE2FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		590B73E91AEA31AB00DE2FEF /* Build configuration list for PBXNativeTarget "HackerBooks_v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				590B73EA1AEA31AB00DE2FEF /* Debug */,
+				590B73EB1AEA31AB00DE2FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		590B73EC1AEA31AB00DE2FEF /* Build configuration list for PBXNativeTarget "HackerBooks_v2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				590B73ED1AEA31AB00DE2FEF /* Debug */,
+				590B73EE1AEA31AB00DE2FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 590B73C41AEA31AB00DE2FEF /* Project object */;
+}
