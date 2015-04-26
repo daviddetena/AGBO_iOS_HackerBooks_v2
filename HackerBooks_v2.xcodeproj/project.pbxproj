@@ -58,6 +58,10 @@
 		59BBF6591AED057E00A1FF08 /* DTCAnnotationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BBF6581AED057E00A1FF08 /* DTCAnnotationsViewController.m */; };
 		59BBF65D1AED136B00A1FF08 /* DTCNewAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BBF65B1AED136B00A1FF08 /* DTCNewAnnotationViewController.m */; };
 		59BBF65E1AED136B00A1FF08 /* DTCNewAnnotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59BBF65C1AED136B00A1FF08 /* DTCNewAnnotationViewController.xib */; };
+		59BBF6621AED34A600A1FF08 /* DTCAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BBF6601AED34A600A1FF08 /* DTCAnnotationViewController.m */; };
+		59BBF6631AED34A600A1FF08 /* DTCAnnotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59BBF6611AED34A600A1FF08 /* DTCAnnotationViewController.xib */; };
+		59BBF6671AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BBF6651AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.m */; };
+		59BBF6681AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59BBF6661AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +158,12 @@
 		59BBF65A1AED136B00A1FF08 /* DTCNewAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCNewAnnotationViewController.h; sourceTree = "<group>"; };
 		59BBF65B1AED136B00A1FF08 /* DTCNewAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCNewAnnotationViewController.m; sourceTree = "<group>"; };
 		59BBF65C1AED136B00A1FF08 /* DTCNewAnnotationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTCNewAnnotationViewController.xib; sourceTree = "<group>"; };
+		59BBF65F1AED34A600A1FF08 /* DTCAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCAnnotationViewController.h; sourceTree = "<group>"; };
+		59BBF6601AED34A600A1FF08 /* DTCAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCAnnotationViewController.m; sourceTree = "<group>"; };
+		59BBF6611AED34A600A1FF08 /* DTCAnnotationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTCAnnotationViewController.xib; sourceTree = "<group>"; };
+		59BBF6641AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCAnnotationPhotoViewController.h; sourceTree = "<group>"; };
+		59BBF6651AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCAnnotationPhotoViewController.m; sourceTree = "<group>"; };
+		59BBF6661AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTCAnnotationPhotoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +262,12 @@
 				59BBF65A1AED136B00A1FF08 /* DTCNewAnnotationViewController.h */,
 				59BBF65B1AED136B00A1FF08 /* DTCNewAnnotationViewController.m */,
 				59BBF65C1AED136B00A1FF08 /* DTCNewAnnotationViewController.xib */,
+				59BBF65F1AED34A600A1FF08 /* DTCAnnotationViewController.h */,
+				59BBF6601AED34A600A1FF08 /* DTCAnnotationViewController.m */,
+				59BBF6611AED34A600A1FF08 /* DTCAnnotationViewController.xib */,
+				59BBF6641AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.h */,
+				59BBF6651AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.m */,
+				59BBF6661AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -467,6 +483,7 @@
 				5906F57C1AEAE49800F31878 /* pen-icon@2x.png in Resources */,
 				5906F57D1AEAE49800F31878 /* tag-icon.png in Resources */,
 				5906F5781AEAE49800F31878 /* noimageThumb.png in Resources */,
+				59BBF6681AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.xib in Resources */,
 				5906F5761AEAE49800F31878 /* favorite-outline@2x.png in Resources */,
 				5906F57B1AEAE49800F31878 /* pen-icon.png in Resources */,
 				590B73DA1AEA31AB00DE2FEF /* LaunchScreen.xib in Resources */,
@@ -476,6 +493,7 @@
 				590B744D1AEACB0C00DE2FEF /* DTCBookViewController.xib in Resources */,
 				5906F5751AEAE49800F31878 /* favorite-outline.png in Resources */,
 				5906F56E1AEAE49800F31878 /* download-icon.png in Resources */,
+				59BBF6631AED34A600A1FF08 /* DTCAnnotationViewController.xib in Resources */,
 				5906F5711AEAE49800F31878 /* downloaded-icon@2x.png in Resources */,
 				5906F5791AEAE49800F31878 /* noimageThumb@2x.png in Resources */,
 				5906F5701AEAE49800F31878 /* downloaded-icon.png in Resources */,
@@ -513,6 +531,8 @@
 				590B73FE1AEA385100DE2FEF /* AGTCoreDataStack.m in Sources */,
 				590B73D51AEA31AB00DE2FEF /* AppDelegate.m in Sources */,
 				590B74481AEAC7EF00DE2FEF /* DTCLibraryViewController.m in Sources */,
+				59BBF6621AED34A600A1FF08 /* DTCAnnotationViewController.m in Sources */,
+				59BBF6671AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.m in Sources */,
 				590B74131AEA42C500DE2FEF /* _DTCPhoto.m in Sources */,
 				590B744C1AEACB0C00DE2FEF /* DTCBookViewController.m in Sources */,
 				590B74121AEA42C500DE2FEF /* _DTCPdf.m in Sources */,

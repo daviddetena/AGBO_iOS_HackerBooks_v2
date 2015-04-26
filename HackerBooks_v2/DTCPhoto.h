@@ -4,7 +4,8 @@
 
 @interface DTCPhoto : _DTCPhoto {}
 
-@property (strong,nonatomic, readonly) UIImage *bookImage;
+@property (strong,nonatomic) UIImage *bookImage;
+@property (strong,nonatomic) UIImage *annotationImage;
 
 #pragma mark - Init
 -(id) initWithURL:(NSURL *) remoteURL

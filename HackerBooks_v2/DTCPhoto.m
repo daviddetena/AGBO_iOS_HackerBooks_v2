@@ -35,37 +35,32 @@
 
 
 #pragma mark - Properties
+
 // We get an UIImage and set photoData with that UIImage
-//-(void) setAnnotationImage:(UIImage *) annotationImage{
-//    
-//    // Sincronizar con imageData
-//    self.photoData = UIImageJPEGRepresentation(annotationImage, 0.9);
-//}
-//
-//
-//// Lazy loading => return an UIImage from photoData in CoreData
-//// Only when needed
-//-(UIImage *) annotationImage{
-//    return [UIImage imageWithData:self.photoData];
-//}
+-(void) setAnnotationImage:(UIImage *) annotationImage{
+    
+    // Sincronizar con imageData
+    self.photoData = UIImageJPEGRepresentation(annotationImage, 0.9);
+}
+
+// Lazy loading => return an UIImage from photoData in CoreData only when needed
+-(UIImage *) annotationImage{
+    return [UIImage imageWithData:self.photoData];
+}
+
 
 
 
 // Lazy loading => return an UIImage from photoData in CoreData
 // Only when needed
 -(UIImage *) bookImage{
-    //return [UIImage imageWithData:self.asyncImage.imageData];
-//    
-//    
-//    if (self.photoData) {
-//        return [UIImage imageWithData:self.photoData];
-//    }
     return [UIImage imageWithData:self.photoData];
 }
 
-//-(void) setBookImage:(UIImage *)bookImage{
-//    self.photoData = UIImageJPEGRepresentation(bookImage, 0.9);
-//}
+-(void) setBookImage:(UIImage *)bookImage{
+    self.photoData = UIImageJPEGRepresentation(bookImage, 0.9);
+}
+
 
 
 #pragma mark - Class methods

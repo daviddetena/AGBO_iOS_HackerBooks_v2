@@ -131,9 +131,7 @@
 
 // Method to hide keyboard when tapping in a non-text view
 - (IBAction)hideKeyboard:(id)sender{
-    
-    [self.nameTextField endEditing:YES];
-    [self.textView endEditing:YES];
+    [self.view endEditing:YES];
 }
 
 
