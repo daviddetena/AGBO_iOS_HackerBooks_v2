@@ -6,6 +6,13 @@
 //  Copyright (c) 2015 David de Tena. All rights reserved.
 //
 
+#define DTCLIBRARY_DID_SELECT_BOOK_NOTIFICATION @"DTCLIBRARY_DID_SELECT_BOOK_NOTIFICATION"
+#define DTCLIBRARY_BOOK_SELECTED_KEY @"DTCLIBRARY_BOOK_KEY"
+
+#define DTCBOOK_DID_CHANGE_PDF_NOTIFICATION @"DTCBOOK_DID_CHANGE_PDF_NOTIFICATION"
+#define DTCBOOK_PDF_KEY @"DTCBOOK_PDF_KEY"
+
+
 #import "AGTCoreDataTableViewController.h"
 @class DTCLibraryViewController;
 @class AGTCoreDataStack;

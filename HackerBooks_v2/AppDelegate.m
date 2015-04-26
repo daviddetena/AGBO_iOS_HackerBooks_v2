@@ -123,7 +123,7 @@
     }
     
     // Controlador primer libro
-    DTCBookViewController *bookVC = [[DTCBookViewController alloc] initWithModel:lastBook];
+    DTCBookViewController *bookVC = [[DTCBookViewController alloc] initWithModel:lastBook stack:self.stack];
     
     // Será el delegado de la tabla
     libraryVC.delegate = bookVC;

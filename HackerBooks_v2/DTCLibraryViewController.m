@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 David de Tena. All rights reserved.
 //
 
+#import "AGTCoreDataStack.h"
 #import "DTCCoreDataQueries.h"
 #import "DTCLibraryViewController.h"
 #import "DTCBookViewController.h"
@@ -46,11 +47,53 @@
 - (void) viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.title = @"HackerBooks2";
+    
+    [self setupNotifications];
+}
+
+- (void) viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self tearDownNotifications];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark - Notifications
+// Suscribe to changes in model
+-(void) setupNotifications{
+    
+    // Suscribe to changes in pdf data of books, and tags
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    [nc addObserver:self
+           selector:@selector(notifyThatBookPdfDidChange:)
+               name:DTCBOOK_DID_CHANGE_PDF_NOTIFICATION
+             object:nil];
+}
+
+
+// Unsuscribe from changes in model
+- (void) tearDownNotifications{
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    [nc removeObserver:self];
+}
+
+
+// Save in CoreData when changes in book
+-(void) notifyThatBookPdfDidChange:(NSNotification *) notification{
+    
+    NSLog(@"La tabla se entera de que el PDF del libro ha cambiado");
+    [self saveToCoreData];
+}
+
+
+// Reload the table when tags change and save data
+-(void) notifyThatTagsDidChange:(NSNotification *) notification{
+    [self.tableView reloadData];
+    [self saveToCoreData];
 }
 
 
@@ -83,16 +126,21 @@
 #pragma mark - TableView delegate
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    NSLog(@"pulso en una celda");
-    
     // Present bookVC with the book selected by pushing
     DTCBook *currentBook = [self bookAtIndexPath:indexPath];   
     
     // Tell the delegate the user did select a book
     if ([self.delegate respondsToSelector:@selector(libraryTableViewController:didSelectBook:)]) {
         [self.delegate libraryTableViewController:self didSelectBook:currentBook];
-        NSLog(@"El delegado entiende el método");
     }
+    
+    // Send notification to let know a new cell has tapped
+    NSNotification *notification = [NSNotification notificationWithName:DTCLIBRARY_DID_SELECT_BOOK_NOTIFICATION
+                                                                 object:self
+                                                               userInfo:@{DTCLIBRARY_BOOK_SELECTED_KEY:currentBook}];
+    [[NSNotificationCenter defaultCenter] postNotification:notification];
+    
+    NSLog(@"Libro seleccionado ha cambiado");
     
     // Guardamos en NSUserDefaults el id de este libro como el último seleccionado
     [self saveLastSelectedBook:currentBook];
@@ -116,6 +164,19 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setValue:book.archiveURIRepresentation forKey:LAST_SELECTED_BOOK];
     [defaults synchronize];
+}
+
+#pragma mark - CoreData
+-(void) saveToCoreData{
+    // Save model when a change in books happens
+    [self.stack saveWithErrorBlock:^(NSError *error) {
+        if (error) {
+            NSLog(@"Error al guardar: %@",error.description);
+        }
+        else{
+            NSLog(@"Guardado en CoreData");
+        }
+    }];
 }
 
 

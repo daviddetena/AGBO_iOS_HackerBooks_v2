@@ -1,13 +1,15 @@
 #import "DTCPhoto.h"
 #import "AGTCoreDataStack.h"
+#import "DTCAsyncImage.h"
 @import UIKit;
 
-@interface DTCPhoto ()
+@interface DTCPhoto ()<DTCAsyncImageDelegate>
 
 // Private interface goes here.
 
 @property (strong,nonatomic) UIImage *defaultBookImage;
 @property (strong,nonatomic) NSURL *bookImageURL;
+@property (strong,nonatomic) DTCAsyncImage *asyncImage;
 
 @end
 
@@ -34,29 +36,36 @@
 
 #pragma mark - Properties
 // We get an UIImage and set photoData with that UIImage
--(void) setAnnotationImage:(UIImage *) annotationImage{
-    
-    // Sincronizar con imageData
-    self.photoData = UIImageJPEGRepresentation(annotationImage, 0.9);
-}
-
-
-// Lazy loading => return an UIImage from photoData in CoreData
-// Only when needed
--(UIImage *) annotationImage{
-    return [UIImage imageWithData:self.photoData];
-}
+//-(void) setAnnotationImage:(UIImage *) annotationImage{
+//    
+//    // Sincronizar con imageData
+//    self.photoData = UIImageJPEGRepresentation(annotationImage, 0.9);
+//}
+//
+//
+//// Lazy loading => return an UIImage from photoData in CoreData
+//// Only when needed
+//-(UIImage *) annotationImage{
+//    return [UIImage imageWithData:self.photoData];
+//}
 
 
 
 // Lazy loading => return an UIImage from photoData in CoreData
 // Only when needed
 -(UIImage *) bookImage{
-    if (self.photoData) {
-        return [UIImage imageWithData:self.photoData];
-    }
+    //return [UIImage imageWithData:self.asyncImage.imageData];
+//    
+//    
+//    if (self.photoData) {
+//        return [UIImage imageWithData:self.photoData];
+//    }
     return self.defaultBookImage;
 }
+
+//-(void) setBookImage:(UIImage *)bookImage{
+//    self.photoData = UIImageJPEGRepresentation(bookImage, 0.9);
+//}
 
 
 #pragma mark - Class methods
@@ -68,7 +77,10 @@
     DTCPhoto *photo = [DTCPhoto insertInManagedObjectContext:stack.context];
     photo.defaultBookImage = defaultImage;
     photo.bookImageURL = url;
-    photo.photoData = nil;
+    photo.photoData = UIImageJPEGRepresentation(defaultImage, 0.9);
+
+    //    photo.asyncImage = [DTCAsyncImage asyncImageWithURL:url defaultImage:defaultImage];
+//    photo.asyncImage.delegate = self;
     
     // Download remote image after a delay so we can see default image
     // for a while
@@ -79,17 +91,20 @@
 }
 
 
--(id) initWithURL:(NSURL *) remoteURL
+-(id) initWithURL:(NSURL *) url
      forBookImage:(UIImage *) defaultImage
             stack:(AGTCoreDataStack *) stack{
     
     DTCPhoto *photo = [DTCPhoto insertInManagedObjectContext:stack.context];
     photo.defaultBookImage = defaultImage;
-    photo.bookImageURL = remoteURL;
+    photo.bookImageURL = url;
+    
+//    photo.asyncImage = [DTCAsyncImage asyncImageWithURL:url defaultImage:defaultImage];
+//    photo.asyncImage.delegate = self;
     
     // Download remote image after a delay so we can see default image
     // for a while
-    [self performSelector:@selector(downloadBookImage) withObject:nil afterDelay:0.01];
+    //[self performSelector:@selector(downloadBookImage) withObject:nil afterDelay:0.01];
     
     /*
     if (!self.photoData) {
@@ -143,6 +158,12 @@
     NSLog(@"Cover book downloaded from %@",[self.bookImageURL path]);
 }
 
+
+#pragma mark - DTCAsyncImageDelegate
+-(void) asyncImageDidChange:(DTCAsyncImage *)anImage{
+    NSLog(@"Photo recibe notificación de protocolo");
+    self.photoData = anImage.imageData;
+}
 
 
 @end

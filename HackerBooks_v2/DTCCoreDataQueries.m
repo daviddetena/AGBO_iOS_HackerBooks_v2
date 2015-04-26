@@ -51,5 +51,22 @@
     return results;
 }
 
+// Method with the objects matching a request with predicate and sort descriptors
++(NSArray *) resultsFromFetchForEntityName:(NSString *) entityName
+                             withPredicate:(NSPredicate *) predicate
+                           sortDescriptors:(NSArray *) sortDescriptors
+                                   inStack:(AGTCoreDataStack *) stack{
+    
+    NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:entityName];
+    req.sortDescriptors = [NSArray arrayWithArray:sortDescriptors];
+    req.predicate = predicate;
+    
+    NSArray *results = [stack executeFetchRequest:req errorBlock:^(NSError *error) {
+        NSLog(@"Error %@", error.localizedDescription);
+    }];
+    
+    return results;
+}
+
 
 @end

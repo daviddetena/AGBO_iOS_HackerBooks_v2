@@ -20,11 +20,17 @@
                                  ascending:(BOOL) ascending
                                    inStack:(AGTCoreDataStack *) stack;
 
-
+// Method with the objects matching a request with predicate
 +(NSArray *) resultsFromFetchForEntityName:(NSString *) entityName
                                   sortedBy:(NSString *) sortingField
                                  ascending:(BOOL) ascending
                              withPredicate:(NSPredicate *) predicate
+                                   inStack:(AGTCoreDataStack *) stack;
+
+// Method with the objects matching a request with predicate and sort descriptors
++(NSArray *) resultsFromFetchForEntityName:(NSString *) entityName
+                             withPredicate:(NSPredicate *) predicate
+                           sortDescriptors:(NSArray *) sortDescriptors
                                    inStack:(AGTCoreDataStack *) stack;
 
 

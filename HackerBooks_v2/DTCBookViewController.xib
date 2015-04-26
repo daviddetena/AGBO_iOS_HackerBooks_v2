@@ -69,7 +69,11 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="Uqx-lk-HXj"/>
-                        <barButtonItem systemItem="bookmarks" id="G23-W2-aRK"/>
+                        <barButtonItem title="Read" id="G23-W2-aRK">
+                            <connections>
+                                <action selector="readBook:" destination="-1" id="KaO-8J-T4Q"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
             </subviews>

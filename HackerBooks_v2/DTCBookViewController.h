@@ -23,9 +23,10 @@
 @property (strong,nonatomic) DTCBook *model;
 
 #pragma mark - Init
--(id) initWithModel:(DTCBook *) model;
+-(id) initWithModel:(DTCBook *) model stack:(AGTCoreDataStack *) stack;
 
 #pragma mark - Actions
 - (IBAction)didToggleFavoriteStatus:(id)sender;
+- (IBAction)readBook:(id)sender;
 
 @end

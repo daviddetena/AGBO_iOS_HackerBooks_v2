@@ -52,6 +52,10 @@
 		590B74481AEAC7EF00DE2FEF /* DTCLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B74471AEAC7EF00DE2FEF /* DTCLibraryViewController.m */; };
 		590B744C1AEACB0C00DE2FEF /* DTCBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B744A1AEACB0C00DE2FEF /* DTCBookViewController.m */; };
 		590B744D1AEACB0C00DE2FEF /* DTCBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 590B744B1AEACB0C00DE2FEF /* DTCBookViewController.xib */; };
+		594266441AEB085400C15B54 /* DTCAsyncImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 594266431AEB085400C15B54 /* DTCAsyncImage.m */; };
+		597757221AEB8F8D0074F6A3 /* DTCSimplePDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 597757201AEB8F8D0074F6A3 /* DTCSimplePDFViewController.xib */; };
+		59BBF6561AECF92200A1FF08 /* DTCSimplePDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BBF6551AECF92200A1FF08 /* DTCSimplePDFViewController.m */; };
+		59BBF6591AED057E00A1FF08 /* DTCAnnotationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BBF6581AED057E00A1FF08 /* DTCAnnotationsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +142,13 @@
 		590B74491AEACB0C00DE2FEF /* DTCBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCBookViewController.h; sourceTree = "<group>"; };
 		590B744A1AEACB0C00DE2FEF /* DTCBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCBookViewController.m; sourceTree = "<group>"; };
 		590B744B1AEACB0C00DE2FEF /* DTCBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTCBookViewController.xib; sourceTree = "<group>"; };
+		594266421AEB085400C15B54 /* DTCAsyncImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCAsyncImage.h; sourceTree = "<group>"; };
+		594266431AEB085400C15B54 /* DTCAsyncImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCAsyncImage.m; sourceTree = "<group>"; };
+		597757201AEB8F8D0074F6A3 /* DTCSimplePDFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTCSimplePDFViewController.xib; sourceTree = "<group>"; };
+		59BBF6541AECF92200A1FF08 /* DTCSimplePDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCSimplePDFViewController.h; sourceTree = "<group>"; };
+		59BBF6551AECF92200A1FF08 /* DTCSimplePDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCSimplePDFViewController.m; sourceTree = "<group>"; };
+		59BBF6571AED057E00A1FF08 /* DTCAnnotationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCAnnotationsViewController.h; sourceTree = "<group>"; };
+		59BBF6581AED057E00A1FF08 /* DTCAnnotationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCAnnotationsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +239,11 @@
 				590B74491AEACB0C00DE2FEF /* DTCBookViewController.h */,
 				590B744A1AEACB0C00DE2FEF /* DTCBookViewController.m */,
 				590B744B1AEACB0C00DE2FEF /* DTCBookViewController.xib */,
+				597757201AEB8F8D0074F6A3 /* DTCSimplePDFViewController.xib */,
+				59BBF6541AECF92200A1FF08 /* DTCSimplePDFViewController.h */,
+				59BBF6551AECF92200A1FF08 /* DTCSimplePDFViewController.m */,
+				59BBF6571AED057E00A1FF08 /* DTCAnnotationsViewController.h */,
+				59BBF6581AED057E00A1FF08 /* DTCAnnotationsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -259,6 +275,8 @@
 				590B74021AEA421600DE2FEF /* Machine */,
 				590B74151AEA42D300DE2FEF /* CoreDataStack */,
 				590B73FF1AEA386400DE2FEF /* Model.xcdatamodeld */,
+				594266421AEB085400C15B54 /* DTCAsyncImage.h */,
+				594266431AEB085400C15B54 /* DTCAsyncImage.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -445,6 +463,7 @@
 				5906F57B1AEAE49800F31878 /* pen-icon.png in Resources */,
 				590B73DA1AEA31AB00DE2FEF /* LaunchScreen.xib in Resources */,
 				5906F5771AEAE49800F31878 /* noimageRect.png in Resources */,
+				597757221AEB8F8D0074F6A3 /* DTCSimplePDFViewController.xib in Resources */,
 				590B744D1AEACB0C00DE2FEF /* DTCBookViewController.xib in Resources */,
 				5906F5751AEAE49800F31878 /* favorite-outline.png in Resources */,
 				5906F56E1AEAE49800F31878 /* download-icon.png in Resources */,
@@ -479,6 +498,7 @@
 				590B74431AEAC6AD00DE2FEF /* AGTCoreDataTableViewController.m in Sources */,
 				590B74111AEA42C500DE2FEF /* _DTCBook.m in Sources */,
 				590B74271AEA42EE00DE2FEF /* DTCTag.m in Sources */,
+				59BBF6561AECF92200A1FF08 /* DTCSimplePDFViewController.m in Sources */,
 				590B74221AEA42EE00DE2FEF /* DTCAnnotation.m in Sources */,
 				590B73FE1AEA385100DE2FEF /* AGTCoreDataStack.m in Sources */,
 				590B73D51AEA31AB00DE2FEF /* AppDelegate.m in Sources */,
@@ -489,6 +509,7 @@
 				590B73D21AEA31AB00DE2FEF /* main.m in Sources */,
 				590B74261AEA42EE00DE2FEF /* DTCPhoto.m in Sources */,
 				590B74251AEA42EE00DE2FEF /* DTCPdf.m in Sources */,
+				59BBF6591AED057E00A1FF08 /* DTCAnnotationsViewController.m in Sources */,
 				590B74231AEA42EE00DE2FEF /* DTCAuthor.m in Sources */,
 				590B742A1AEA44FB00DE2FEF /* DTCHackerBooksBaseClass.m in Sources */,
 				590B74101AEA42C500DE2FEF /* _DTCAuthor.m in Sources */,
@@ -497,6 +518,7 @@
 				590B74241AEA42EE00DE2FEF /* DTCBook.m in Sources */,
 				590B74141AEA42C500DE2FEF /* _DTCTag.m in Sources */,
 				590B740F1AEA42C500DE2FEF /* _DTCAnnotation.m in Sources */,
+				594266441AEB085400C15B54 /* DTCAsyncImage.m in Sources */,
 				5906F55C1AEADCD100F31878 /* DTCSandboxURL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

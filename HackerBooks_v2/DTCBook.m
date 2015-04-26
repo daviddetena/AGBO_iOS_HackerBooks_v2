@@ -105,7 +105,6 @@
 
 
 #pragma mark - Utils
-// TRY TO IMPLEMENT A GENERIC METHOD FOR THESE TWO
 
 // Return the author(s) of a book in a string
 -(NSString *) sortedListOfAuthors{
@@ -141,6 +140,50 @@
 -(NSData *) archiveURIRepresentation{
     NSURL *uri = self.objectID.URIRepresentation;
     return [NSKeyedArchiver archivedDataWithRootObject:uri];
+}
+
+
+#pragma mark - Favorite management
+-(BOOL) hasFavoriteTag{
+    for (DTCTag *tag in self.tags.allObjects) {
+        if ([tag.name isEqualToString:FAVORITE]) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+
+-(void) insertFavoriteTag{
+    // Check if the book is already favorite
+    if (![self hasFavoriteTag]) {
+        //NSMutableArray *mTags = [self.tags.allObjects mutableCopy];
+        //DTCTag *favTag = [DTCTag tagWithName:FAVORITE stack:self.]
+    }
+}
+
+
+-(void) removeFavoriteTag{
+    
+}
+
+
+
+#pragma mark - Notifications
+/**
+    Notify in several ways that the book has changed: Protocol and Delegate
+ */
+- (void) notifyChanges{
+    
+    // Via notification
+    NSNotification *notification = [NSNotification notificationWithName:DTCBOOK_DID_CHANGE_NOTIFICATION
+                                                                 object:self
+                                                               userInfo:@{DTCBOOK_CHANGE_KEY:self}];
+    
+    [[NSNotificationCenter defaultCenter] postNotification:notification];
+    
+    // Via delegate protocol
+    //[self.delegate bookDidChange:self];
 }
 
 @end
