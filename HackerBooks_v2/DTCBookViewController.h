@@ -13,11 +13,17 @@
 @interface DTCBookViewController : UIViewController<DTCLibraryTableViewControllerDelegate, UISplitViewControllerDelegate>
 
 #pragma mark - Properties
+
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *authorsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tagsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *annotationsLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *coverImageView;
+
+// Portrait
+
+
 
 // Model
 @property (strong,nonatomic) DTCBook *model;

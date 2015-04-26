@@ -145,6 +145,10 @@
 
 -(void) configureForPhone:(DTCLibraryViewController *) libraryVC{
     // NOT IMPLEMENTED YET
+    
+    // Table is auto-delegate for phones
+    libraryVC.delegate = libraryVC;
+    self.window.rootViewController = [libraryVC wrappedInNavigation];
 }
 
 

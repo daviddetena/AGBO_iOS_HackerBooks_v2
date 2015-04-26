@@ -62,6 +62,7 @@
 		59BBF6631AED34A600A1FF08 /* DTCAnnotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59BBF6611AED34A600A1FF08 /* DTCAnnotationViewController.xib */; };
 		59BBF6671AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BBF6651AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.m */; };
 		59BBF6681AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59BBF6661AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.xib */; };
+		59BBF66A1AED628B00A1FF08 /* DTCBookViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59BBF6691AED628B00A1FF08 /* DTCBookViewController~iphone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +165,7 @@
 		59BBF6641AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCAnnotationPhotoViewController.h; sourceTree = "<group>"; };
 		59BBF6651AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCAnnotationPhotoViewController.m; sourceTree = "<group>"; };
 		59BBF6661AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTCAnnotationPhotoViewController.xib; sourceTree = "<group>"; };
+		59BBF6691AED628B00A1FF08 /* DTCBookViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DTCBookViewController~iphone.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 				590B74491AEACB0C00DE2FEF /* DTCBookViewController.h */,
 				590B744A1AEACB0C00DE2FEF /* DTCBookViewController.m */,
 				590B744B1AEACB0C00DE2FEF /* DTCBookViewController.xib */,
+				59BBF6691AED628B00A1FF08 /* DTCBookViewController~iphone.xib */,
 				597757201AEB8F8D0074F6A3 /* DTCSimplePDFViewController.xib */,
 				59BBF6541AECF92200A1FF08 /* DTCSimplePDFViewController.h */,
 				59BBF6551AECF92200A1FF08 /* DTCSimplePDFViewController.m */,
@@ -481,6 +484,7 @@
 			files = (
 				5906F5741AEAE49800F31878 /* favorite-filled@2x.png in Resources */,
 				5906F57C1AEAE49800F31878 /* pen-icon@2x.png in Resources */,
+				59BBF66A1AED628B00A1FF08 /* DTCBookViewController~iphone.xib in Resources */,
 				5906F57D1AEAE49800F31878 /* tag-icon.png in Resources */,
 				5906F5781AEAE49800F31878 /* noimageThumb.png in Resources */,
 				59BBF6681AED3E9500A1FF08 /* DTCAnnotationPhotoViewController.xib in Resources */,

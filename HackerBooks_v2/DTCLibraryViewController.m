@@ -129,7 +129,8 @@
     // Present bookVC with the book selected by pushing
     DTCBook *currentBook = [self bookAtIndexPath:indexPath];   
     
-    // Tell the delegate the user did select a book
+    // Notify the delegate (bookVC por pads and self for phones) that
+    // the model has changed (only if the delegate understands the message [implements it])
     if ([self.delegate respondsToSelector:@selector(libraryTableViewController:didSelectBook:)]) {
         [self.delegate libraryTableViewController:self didSelectBook:currentBook];
     }
@@ -156,6 +157,19 @@
     
     return book;
 }
+
+
+#pragma mark - Auto delegate (por iphones)
+
+// Push the detail view controller of the book selected
+- (void) libraryTableViewController:(DTCLibraryViewController *)libraryVC
+                      didSelectBook:(DTCBook *)aBook{
+    
+    DTCBookViewController *bookVC = [[DTCBookViewController alloc]initWithModel:aBook stack:self.stack];
+    [self.navigationController pushViewController:bookVC animated:YES];
+}
+
+
 
 
 #pragma mark - NSUserDefaults

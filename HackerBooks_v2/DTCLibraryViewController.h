@@ -18,6 +18,8 @@
 @class AGTCoreDataStack;
 @class DTCBook;
 
+
+
 #pragma mark - Protocol definition
 // Custom protocol
 @protocol DTCLibraryTableViewControllerDelegate <NSObject>
@@ -36,7 +38,7 @@
 
 #pragma mark - Properties
 
-// TableVC delegate
+// Delegate => will be the DTCBookVC for iPad and self for iPhone
 @property (weak, nonatomic) id<DTCLibraryTableViewControllerDelegate>delegate;
 
 
