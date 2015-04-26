@@ -10,6 +10,7 @@
 #import "DTCCoreDataQueries.h"
 #import "DTCLibraryViewController.h"
 #import "DTCBookViewController.h"
+#import "DTCLibraryTableViewCell.h"
 #import "DTCBook.h"
 #import "DTCHelpers.h"
 #import "DTCPhoto.h"
@@ -110,10 +111,12 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
     }
     
-    // Get the book at index path
-    
     // Sync UI with the book
     DTCBook *book = [self bookAtIndexPath:indexPath];
+    
+    // Custom cell
+    //DTCLibraryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[DTCLibraryTableViewCell cellId]];
+    
     cell.textLabel.text = book.title;
     cell.detailTextLabel.text = [book sortedListOfAuthors];
     cell.imageView.image = book.photo.bookImage;

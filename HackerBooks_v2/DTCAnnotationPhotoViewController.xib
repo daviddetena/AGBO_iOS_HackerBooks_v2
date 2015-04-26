@@ -8,7 +8,7 @@
             <connections>
                 <outlet property="activityView" destination="o88-we-Mwx" id="ve0-Mg-vaw"/>
                 <outlet property="imageView" destination="FQl-RB-AyV" id="TrQ-Aq-kzr"/>
-                <outlet property="toolbar" destination="PZr-bR-EKX" id="ICo-99-YnD"/>
+                <outlet property="toolbar" destination="IU2-1a-sMP" id="Y8N-HK-Boh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,37 +17,31 @@
             <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="PZr-bR-EKX">
-                    <rect key="frame" x="0.0" y="980" width="768" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <items>
-                        <barButtonItem systemItem="camera" id="zel-R9-KMl">
-                            <connections>
-                                <action selector="takePicture:" destination="-1" id="UO3-9I-Jea"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Ndb-Zt-tjK"/>
-                        <barButtonItem title="Vintage" id="tCS-nK-ocC">
-                            <connections>
-                                <action selector="applyFilter:" destination="-1" id="SiD-BX-Zcr"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="ct2-z3-zvq"/>
-                        <barButtonItem systemItem="trash" id="ejk-UR-ir6">
-                            <connections>
-                                <action selector="deletePhoto:" destination="-1" id="j9z-Ys-y19"/>
-                            </connections>
-                        </barButtonItem>
-                    </items>
-                </toolbar>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="o88-we-Mwx">
                     <rect key="frame" x="366" y="502" width="37" height="37"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </activityIndicatorView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="FQl-RB-AyV">
-                    <rect key="frame" x="59" y="151" width="650" height="750"/>
+                    <rect key="frame" x="0.0" y="66" width="768" height="914"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="IU2-1a-sMP">
+                    <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem systemItem="camera" id="UZF-DG-SkS">
+                            <connections>
+                                <action selector="takePicture:" destination="-1" id="azl-Pl-DmZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="fi2-Zo-ZDh"/>
+                        <barButtonItem systemItem="trash" id="RC8-Zw-jBU">
+                            <connections>
+                                <action selector="deletePhoto:" destination="-1" id="U74-qT-ZvY"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

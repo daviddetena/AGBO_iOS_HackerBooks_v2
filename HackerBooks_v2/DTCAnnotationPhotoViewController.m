@@ -13,6 +13,8 @@
 
 @interface DTCAnnotationPhotoViewController ()
 
+@property (strong,nonatomic) UIBarButtonItem *trashButton;
+
 @end
 
 @implementation DTCAnnotationPhotoViewController
@@ -40,9 +42,12 @@
     // Sync view with model
     if (!self.model.photoData) {
         self.imageView.image = [UIImage imageNamed:@"noImageRect.png"];
+//        self.trashButton = [self.toolbarItems objectAtIndex:3];
+//        self.trashButton.enabled = NO;
     }
     else{
         self.imageView.image = self.model.annotationImage;
+//        self.trashButton.enabled = YES;
     }
     
     [self hideActivityIndicator];
@@ -113,27 +118,9 @@
                      }];
 }
 
-- (IBAction)applyFilter:(id)sender {
-    
-    
-}
 
 - (IBAction)deletePhoto:(id)sender {
-    
-//   
-//    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"DELETE?" message:@"Really want to delete photo?" preferredStyle:UIAlertControllerStyleActionSheet];
-//    
-//    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
-//    
-//    // For Pad
-//    [alertController addAction:cancelAction];
-//    [alertController setModalPresentationStyle:UIModalPresentationPopover];
-//    
-//    
-//    
-//    [self presentViewController:alertController animated:YES completion:nil];
-//    
-//    
+  
     // Create UIAlertController
     UIAlertController *alertController = [UIAlertController
                                           alertControllerWithTitle:@"¿Delete photo?"
@@ -148,7 +135,7 @@
         // Calculamos centro del icono de la papelera a partir de la toolbar
         CGFloat toolbarFrameX = self.toolbar.frame.origin.x;
         CGFloat toolbarFrameY = self.toolbar.frame.origin.y;
-        UIView *trashView = (UIView *) [self.toolbar.subviews objectAtIndex:4];
+        UIView *trashView = (UIView *) [self.toolbar.subviews objectAtIndex:3];
         CGFloat centerX = trashView.center.x;
         CGFloat centerY = trashView.center.y;
         CGPoint trashCenter = CGPointMake(toolbarFrameX + centerX, toolbarFrameY + centerY);
@@ -180,6 +167,7 @@
                              
                              // No-image
                              self.imageView.image = [UIImage imageNamed:@"noImageRect.png"];
+                             self.trashButton.enabled = NO;
                              
                              // Centro original
                              self.imageView.center = oldCenter;

@@ -60,6 +60,8 @@
     self.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
     
     [self syncViewWithModel];
+    
+
 }
 
 -(void) viewWillDisappear:(BOOL)animated{
@@ -69,14 +71,14 @@
 }
 
 
+#pragma mark - Memory
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
-
-#pragma mark - Utils
 
 -(void) setupUI{
     UIBarButtonItem *annotationButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks
@@ -87,6 +89,8 @@
 
 
 - (void) syncViewWithModel{
+    
+    
     // Set model properties to UI elements
     self.titleLabel.text = self.model.title;
     self.authorsLabel.text = [self.model sortedListOfAuthors];
@@ -104,6 +108,24 @@
     else{
         self.annotationsLabel.text = [NSString stringWithFormat:@"%lu annotations for this book",(unsigned long)annotationCounter];
     }
+    
+    /*
+    // Portrait
+    self.titleLabelPortrait.text = self.model.title;
+    self.authorsLabelPortrait.text = [self.model sortedListOfAuthors];
+    self.tagsLabelPortrait.text = [self.model sortedListOfTags];
+    self.coverImageViewPortrait.image = self.model.photo.bookImage;
+
+    if (!self.model.annotations || annotationCounter == 0) {
+        self.annotationsLabelPortrait.text = @"No annotations yet";
+    }
+    else if(annotationCounter == 1){
+        self.annotationsLabelPortrait.text = @"1 annotation for this book";
+    }
+    else{
+        self.annotationsLabelPortrait.text = [NSString stringWithFormat:@"%lu annotations for this book",(unsigned long)annotationCounter];
+    } 
+     */
 }
 
 

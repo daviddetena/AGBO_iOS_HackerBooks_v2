@@ -168,6 +168,18 @@
 }
 
 
+// Permitimos que se puedan eliminar notas de la libreta
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Obtenemos la nota de la celda
+        DTCAnnotation *annotation = [self.fetchedResultsController objectAtIndexPath:indexPath];
+        
+        // La eliminiamos
+        [self.fetchedResultsController.managedObjectContext deleteObject:annotation];
+    }
+}
+
+
 #pragma mark - Table Delegate
 // Present annotation detail view in navigation controller
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -6,10 +6,12 @@
 #import "AGTCoreDataStack.h"
 #import "DTCHelpers.h"
 #import "BookSettings.h"
+#import "DTCCoreDataQueries.h"
 
 @interface DTCBook ()
 
 // Private interface goes here.
+@property (strong,nonatomic) AGTCoreDataStack *stack;
 
 @end
 
@@ -20,6 +22,24 @@
 -(UIImage *) coverImage{
     return [UIImage imageWithData:self.photo.photoData];
 }
+
+
+-(BOOL) isFavorite{
+    if ([self hasFavoriteTag]) {
+        return YES;
+    }
+    return NO;
+}
+
+-(void) setIsFavorite:(BOOL)isFavorite{
+    if (isFavorite) {
+        [self insertFavoriteTag];
+    }
+    else{
+        [self removeFavoriteTag];
+    }
+}
+
 
 
 #pragma mark - Factory inits
@@ -157,14 +177,44 @@
 -(void) insertFavoriteTag{
     // Check if the book is already favorite
     if (![self hasFavoriteTag]) {
-        //NSMutableArray *mTags = [self.tags.allObjects mutableCopy];
-        //DTCTag *favTag = [DTCTag tagWithName:FAVORITE stack:self.]
+        NSMutableArray *mTags = [self.tags.allObjects mutableCopy];
+        DTCTag *favTag = [DTCTag tagWithName:FAVORITE stack:self.stack];
+        
+        // Favorite is always index 0
+        [mTags insertObject:favTag atIndex:0];
+        
+        // Update tags for the book
+        NSSet *set = [NSSet setWithArray:mTags];
+        [self removeTags:self.tags];
+        [self addTags:set];
+        
+        // Book did change
+        [self notifyChanges];
     }
 }
 
 
 -(void) removeFavoriteTag{
-    
+    if ([self hasFavoriteTag]) {
+        NSMutableArray *mTags = [self.tags.allObjects mutableCopy];
+        
+        // Check if this book was the one with favorite tag
+        DTCTag *favTag = [DTCTag tagWithName:FAVORITE stack:self.stack];
+        
+        if([favTag.books count]<=1){
+            // only one book tagged as favorite (this one) => remove FAVORITE tag
+            [self.stack.context deleteObject:favTag];
+        }
+
+        // Favorite is always index 0
+        [mTags removeObjectAtIndex:0];
+        NSSet *set = [NSSet setWithArray:mTags];
+        [self removeTags:self.tags];
+        [self addTags:set];
+        
+        // Book did change
+        [self notifyChanges];
+    }
 }
 
 

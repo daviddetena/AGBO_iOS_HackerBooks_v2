@@ -22,7 +22,12 @@
 @property (weak, nonatomic) IBOutlet UIImageView *coverImageView;
 
 // Portrait
-
+@property (weak, nonatomic) IBOutlet UIView *portraitView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabelPortrait;
+@property (weak, nonatomic) IBOutlet UILabel *authorsLabelPortrait;
+@property (weak, nonatomic) IBOutlet UILabel *tagsLabelPortrait;
+@property (weak, nonatomic) IBOutlet UILabel *annotationsLabelPortrait;
+@property (weak, nonatomic) IBOutlet UIImageView *coverImageViewPortrait;
 
 
 // Model

@@ -74,50 +74,8 @@
     photo.bookImageURL = url;
     photo.photoData = UIImageJPEGRepresentation(defaultImage, 0.9);
 
-    //    photo.asyncImage = [DTCAsyncImage asyncImageWithURL:url defaultImage:defaultImage];
-//    photo.asyncImage.delegate = self;
-    
-    // Download remote image after a delay so we can see default image
-    // for a while
-    //[self performSelector:@selector(downloadBookImage) withObject:nil afterDelay:0.01];
-    
     return photo;
-    //return [[self alloc] initWithURL:url forBookImage:defaultImage stack:stack];
-}
 
-
--(id) initWithURL:(NSURL *) url
-     forBookImage:(UIImage *) defaultImage
-            stack:(AGTCoreDataStack *) stack{
-    
-    DTCPhoto *photo = [DTCPhoto insertInManagedObjectContext:stack.context];
-    photo.defaultBookImage = defaultImage;
-    photo.bookImageURL = url;
-    
-//    photo.asyncImage = [DTCAsyncImage asyncImageWithURL:url defaultImage:defaultImage];
-//    photo.asyncImage.delegate = self;
-    
-    // Download remote image after a delay so we can see default image
-    // for a while
-    //[self performSelector:@selector(downloadBookImage) withObject:nil afterDelay:0.01];
-    
-    /*
-    if (!self.photoData) {
-        // No photo. Set default while downloading remote image asynchronously
-        DTCPhoto *photo = [DTCPhoto insertInManagedObjectContext:stack.context];
-        photo.defaultBookImage = defaultImage;
-        photo.bookImageURL = remoteURL;
-        
-        // Download remote image after a delay so we can see default image
-        // for a while
-        [self performSelector:@selector(downloadBookImage) withObject:nil afterDelay:0.01];
-    }
-    else{
-    
-    }
-     */
-    
-    return self;
 }
 
 
@@ -148,16 +106,15 @@
 -(void) setNewBookImageWithData:(NSData *) data{
 
     // Save image data in property for CoreData
-    self.photoData = data;
-    
-    NSLog(@"Cover book downloaded from %@",[self.bookImageURL path]);
+    //self.photoData = data;
 }
 
 
 #pragma mark - DTCAsyncImageDelegate
 -(void) asyncImageDidChange:(DTCAsyncImage *)anImage{
-    NSLog(@"Photo recibe notificación de protocolo");
+    //NSLog(@"Photo recibe notificación de protocolo");
     self.photoData = anImage.imageData;
+    
 }
 
 

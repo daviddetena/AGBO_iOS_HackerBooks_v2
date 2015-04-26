@@ -217,12 +217,10 @@
     [self.stack saveWithErrorBlock:^(NSError *error) {
         NSLog(@"Error al guardar: %@",error.description);
     }];
-    NSLog(@"Guardado");
 }
 
 -(void) autoSave{
     if (AUTO_SAVE) {
-        NSLog(@"Autoguardando...");
         [self save];
         
         [self performSelector:@selector(autoSave)

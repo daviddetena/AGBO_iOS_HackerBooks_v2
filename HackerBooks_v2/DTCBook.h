@@ -21,6 +21,7 @@
 @interface DTCBook : _DTCBook {}
 
 #pragma mark - Properties
+@property (nonatomic) BOOL isFavorite;
 @property (nonatomic, strong, readonly) UIImage* coverImage;
 
 
