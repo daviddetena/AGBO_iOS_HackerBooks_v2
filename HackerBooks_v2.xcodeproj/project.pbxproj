@@ -56,6 +56,8 @@
 		597757221AEB8F8D0074F6A3 /* DTCSimplePDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 597757201AEB8F8D0074F6A3 /* DTCSimplePDFViewController.xib */; };
 		59BBF6561AECF92200A1FF08 /* DTCSimplePDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BBF6551AECF92200A1FF08 /* DTCSimplePDFViewController.m */; };
 		59BBF6591AED057E00A1FF08 /* DTCAnnotationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BBF6581AED057E00A1FF08 /* DTCAnnotationsViewController.m */; };
+		59BBF65D1AED136B00A1FF08 /* DTCNewAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BBF65B1AED136B00A1FF08 /* DTCNewAnnotationViewController.m */; };
+		59BBF65E1AED136B00A1FF08 /* DTCNewAnnotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59BBF65C1AED136B00A1FF08 /* DTCNewAnnotationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +151,9 @@
 		59BBF6551AECF92200A1FF08 /* DTCSimplePDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCSimplePDFViewController.m; sourceTree = "<group>"; };
 		59BBF6571AED057E00A1FF08 /* DTCAnnotationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCAnnotationsViewController.h; sourceTree = "<group>"; };
 		59BBF6581AED057E00A1FF08 /* DTCAnnotationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCAnnotationsViewController.m; sourceTree = "<group>"; };
+		59BBF65A1AED136B00A1FF08 /* DTCNewAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCNewAnnotationViewController.h; sourceTree = "<group>"; };
+		59BBF65B1AED136B00A1FF08 /* DTCNewAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCNewAnnotationViewController.m; sourceTree = "<group>"; };
+		59BBF65C1AED136B00A1FF08 /* DTCNewAnnotationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DTCNewAnnotationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +249,9 @@
 				59BBF6551AECF92200A1FF08 /* DTCSimplePDFViewController.m */,
 				59BBF6571AED057E00A1FF08 /* DTCAnnotationsViewController.h */,
 				59BBF6581AED057E00A1FF08 /* DTCAnnotationsViewController.m */,
+				59BBF65A1AED136B00A1FF08 /* DTCNewAnnotationViewController.h */,
+				59BBF65B1AED136B00A1FF08 /* DTCNewAnnotationViewController.m */,
+				59BBF65C1AED136B00A1FF08 /* DTCNewAnnotationViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -463,6 +471,7 @@
 				5906F57B1AEAE49800F31878 /* pen-icon.png in Resources */,
 				590B73DA1AEA31AB00DE2FEF /* LaunchScreen.xib in Resources */,
 				5906F5771AEAE49800F31878 /* noimageRect.png in Resources */,
+				59BBF65E1AED136B00A1FF08 /* DTCNewAnnotationViewController.xib in Resources */,
 				597757221AEB8F8D0074F6A3 /* DTCSimplePDFViewController.xib in Resources */,
 				590B744D1AEACB0C00DE2FEF /* DTCBookViewController.xib in Resources */,
 				5906F5751AEAE49800F31878 /* favorite-outline.png in Resources */,
@@ -497,6 +506,7 @@
 				590B742D1AEA9FA300DE2FEF /* DTCHelpers.m in Sources */,
 				590B74431AEAC6AD00DE2FEF /* AGTCoreDataTableViewController.m in Sources */,
 				590B74111AEA42C500DE2FEF /* _DTCBook.m in Sources */,
+				59BBF65D1AED136B00A1FF08 /* DTCNewAnnotationViewController.m in Sources */,
 				590B74271AEA42EE00DE2FEF /* DTCTag.m in Sources */,
 				59BBF6561AECF92200A1FF08 /* DTCSimplePDFViewController.m in Sources */,
 				590B74221AEA42EE00DE2FEF /* DTCAnnotation.m in Sources */,

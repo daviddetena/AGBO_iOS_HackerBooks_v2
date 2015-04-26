@@ -70,6 +70,8 @@
         [self configureForPhone:libraryVC];
     }
 
+    // Set autosave to CoreData
+    [self autoSave];
     
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -203,10 +205,6 @@
     
     [self autoSave];
 }
-
-
-#pragma mark - Utils
-
 
 
 #pragma mark - CoreData

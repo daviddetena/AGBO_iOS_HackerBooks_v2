@@ -25,8 +25,9 @@
 
 
 
-#pragma mark - Factory init
+#pragma mark - Factory init methods
 +(instancetype) annotationWithName:(NSString *) name
+                              text:(NSString *) text
                               book:(DTCBook *) book
                              stack:(AGTCoreDataStack *) stack{
 
@@ -34,12 +35,22 @@
     
     // Set mandatory properties
     annotation.name = name;
+    annotation.text = text;
     annotation.book = book;
     annotation.creationDate = [NSDate date];
     annotation.modificationDate = [NSDate date];
     annotation.photo = [DTCPhoto insertInManagedObjectContext:stack.context];
     
     return annotation;
+
+}
+
++(instancetype) annotationWithName:(NSString *) name
+                              book:(DTCBook *) book
+                             stack:(AGTCoreDataStack *) stack{
+
+    NSString *text = @"";
+    return [self annotationWithName:name text:text book:book stack:stack];
 }
 
 

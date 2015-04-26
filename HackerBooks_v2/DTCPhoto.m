@@ -60,7 +60,7 @@
 //    if (self.photoData) {
 //        return [UIImage imageWithData:self.photoData];
 //    }
-    return self.defaultBookImage;
+    return [UIImage imageWithData:self.photoData];
 }
 
 //-(void) setBookImage:(UIImage *)bookImage{

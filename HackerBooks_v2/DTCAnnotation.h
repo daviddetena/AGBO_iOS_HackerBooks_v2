@@ -10,4 +10,9 @@
                               book:(DTCBook *) book
                              stack:(AGTCoreDataStack *) stack;
 
++(instancetype) annotationWithName:(NSString *) name
+                              text:(NSString *) text
+                              book:(DTCBook *) book
+                             stack:(AGTCoreDataStack *) stack;
+
 @end
